@@ -1,0 +1,10 @@
+node_modules/
+.vscode/
+**/client/.next/
+**/client/components
+**/client/helpers
+**/client/node_modules
+**/client/pages
+client/*.js
+**/client/package.json
+**/client/package-lock.json
