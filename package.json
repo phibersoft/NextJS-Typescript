@@ -12,7 +12,7 @@
     "next:build": "next build ./client/",
     "next:start": "next start ./client/",
     "build:ts": "tsc",
-    "start": "node ./dist/bundle.js",
+    "start": "cross-env NODE_ENV=production node ./dist/bundle.js",
     "build": "cross-env NODE_ENV=production webpack",
     "test": "node -r ts-node/register ./test.ts"
   },
@@ -41,7 +41,6 @@
     "@types/react": "^16.9.46",
     "@types/react-dom": "^16.9.8",
     "chalk": "^4.1.0",
-    "cross-env": "^7.0.2",
     "nodemon": "^2.0.4",
     "ts-loader": "^8.0.2",
     "ts-node": "^8.10.2",
@@ -52,6 +51,7 @@
   },
   "dependencies": {
     "cookie-parser": "^1.4.5",
+    "cross-env": "^7.0.2",
     "express": "^4.17.1",
     "next": "^9.5.2",
     "react": "^16.13.1",
