@@ -17,8 +17,8 @@ const port = process.env.PORT || 3000;
     });
     server.use(express.json());
     server.use(cookieParser());
-
     server.use("/", routes);
+    
     server.use("/joint/", express.static("./server/public/"));
     server.all("*", (req: express.Request, res: express.Response) => {
       return handle(req, res);
