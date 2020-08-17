@@ -1,6 +1,5 @@
 node_modules/
 .vscode/
-**/client/.next/
 **/client/components
 **/client/helpers
 **/client/node_modules
