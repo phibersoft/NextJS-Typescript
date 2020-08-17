@@ -1,1 +1,1 @@
-console.log("Testing..");
+console.log(encodeURIComponent("Testi/ng.."));
